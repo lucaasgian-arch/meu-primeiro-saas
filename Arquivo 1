@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Avaliação</title>
+</head>
+<body>
+
+  <h2>Deixe sua avaliação</h2>
+
+  <form id="feedback-form">
+    <input type="text" id="whatsapp" placeholder="WhatsApp" required /><br><br>
+    <input type="email" id="email" placeholder="Email" required /><br><br>
+    <textarea id="feedback" placeholder="Digite sua opinião" required></textarea><br><br>
+    <button type="submit">Enviar</button>
+  </form>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
