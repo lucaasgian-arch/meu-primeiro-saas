@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Avaliação do Estabelecimento</title>
+</head>
+<body>
+  <h1>Deixe sua avaliação</h1>
+
+  <form id="form">
+    <input type="text" placeholder="Seu nome" id="nome" required><br><br>
+    <input type="email" placeholder="Seu email" id="email" required><br><br>
+    <input type="tel" placeholder="Seu telefone" id="telefone" required><br><br>
+    <button type="submit">Enviar</button>
+  </form>
+
+  <script>
+    document.getElementById("form").addEventListener("submit", function(e){
+      e.preventDefault();
+      alert("Formulário enviado! (próximo passo: banco de dados)");
+    });
+  </script>
+</body>
+</html>
