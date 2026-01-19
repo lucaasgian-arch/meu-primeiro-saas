@@ -1,24 +1,20 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <title>Avaliação do Estabelecimento</title>
+  <meta charset="UTF-8" />
+  <title>Avaliação</title>
 </head>
 <body>
-  <h1>Deixe sua avaliação</h1>
 
-  <form id="form">
-    <input type="text" placeholder="Seu nome" id="nome" required><br><br>
-    <input type="email" placeholder="Seu email" id="email" required><br><br>
-    <input type="tel" placeholder="Seu telefone" id="telefone" required><br><br>
+  <h2>Deixe sua avaliação</h2>
+
+  <form id="feedback-form">
+    <input type="text" id="whatsapp" placeholder="WhatsApp" required /><br><br>
+    <input type="email" id="email" placeholder="Email" required /><br><br>
+    <textarea id="feedback" placeholder="Digite sua opinião" required></textarea><br><br>
     <button type="submit">Enviar</button>
   </form>
 
-  <script>
-    document.getElementById("form").addEventListener("submit", function(e){
-      e.preventDefault();
-      alert("Formulário enviado! (próximo passo: banco de dados)");
-    });
-  </script>
+  <script type="module" src="script.js"></script>
 </body>
 </html>
